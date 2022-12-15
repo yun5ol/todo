@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.main-screen {
+    left: 2%;
+    top: 10px;
+    width: 96%;
+    height: calc(100% - 20px);
+    max-width: 768px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.todo-input {
+    position: absolute;
+    left: 5%;
+    top: 10px;
+    width: 75%;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: 1s;
+}
+
+#todo-allcheck {
+    position: absolute;
+    cursor: pointer;
+    left: 84%; /**/
+    top: 0%; /**/
+    width: 15%; /**/
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0px;
+    transition: 1s;
+    font-weight: bold; /**/
+}
+
+#clear {
+    position: absolute;
+    cursor: pointer;
+    left: 0%; /**/
+    top: 0%; /**/
+    width: 15%; /**/
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0px;
+    transition: 1s;
+    font-weight: bold; /**/
+    margin-left: 95px;
+}
+
+.todo-button {
+    position: absolute;
+    left: 81%;
+    top: 10px;
+    width: 15%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 15px;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.todo-button:hover {
+    background-color: rgb(180, 255, 160);
+    font-size: 1.5rem;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+
+.todo-list {
+    position: absolute;
+    left: 5%;
+    top: 70px;
+    width: 91%;
+    height: 90%;
+    background-color: white;
+}
+
+.todo-card {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+    transition: 1s;
+    font-size: 2rem;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.todo-card:hover {
+    box-shadow: 5px 5px 5px rgba(90, 84, 84, 0.288);
+}
+.todo-check {
+    position: absolute;
+    left: 80%;
+}
+
+.todo-check:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.todo-delete {
+    position: absolute;
+    left: 90%;
+}
+
+.todo-delete:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.checked {
+    /* 체크 시 취소선 추가를 위함 */
+    text-decoration: line-through;
+}
+
+.todo-input::placeholder{
+    color: rgb(185, 177, 177);
+}
